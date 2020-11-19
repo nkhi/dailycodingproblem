@@ -36,8 +36,8 @@ class Node:
     def __str__(self):
         return str(self.val)
 
-
 def level(r: Node, value: int, lev=0) -> int:
+    "Return the depth of the BTree Node 'r'. "
     if r is None:
         return 0
     elif r.val == value:
@@ -48,6 +48,7 @@ def level(r: Node, value: int, lev=0) -> int:
     return level(r.r, value, lev + 1)
 
 def cousin_finder(r: Node, node: int, lev: int) -> list:
+    "Return a list of cousins of the BTree Node 'r'. Used in cousins."
     if r is None:
         return []
     elif lev == 2 and r.parent_of(node):
@@ -61,6 +62,7 @@ def cousin_finder(r: Node, node: int, lev: int) -> list:
     return res
 
 def cousins(r: Node, node: int) -> list:
+    "Returns the entire set of cousins of a given BTree Node 'r'."
     lev = level(r, node)
     return cousin_finder(r, node, lev)
 
