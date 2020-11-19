@@ -19,15 +19,21 @@ def n_sunset_view(buildings):
     Return the number of buildings with heights represented in int array 'buildings' 
     which have a view of the sun setting in the west.    
     """
-    count = 0
+    c = 0
+    # loop through the array except for the last element
     for i in range(len(buildings)-1):
+
+        # check if the current index's building is taller than
+        # neighbour to the west
         if buildings[i] > buildings[i+1]:
-            count+=1
+
+            # then it has a view. increment counter.
+            c+=1
+            
+    # the westernmost building will always have a view (buildings[i-1])
     return(count+1)
 
 if __name__ == "__main__":
-    print('write something')
-    a = input()
-    print(a)
+    example_array = [3, 7, 8, 3, 6, 1]
     print(n_sunset_view(example_array))
     # output: 3
