@@ -31,9 +31,15 @@ def n_sunset_view(buildings):
             c+=1
             
     # the westernmost building will always have a view (buildings[i-1])
-    return(count+1)
+    return(c+1)
 
 if __name__ == "__main__":
     example_array = [3, 7, 8, 3, 6, 1]
-    print(n_sunset_view(example_array))
-    # output: 3
+    print("input: {ex}".format(ex=example_array))
+    example_solution = n_sunset_view(example_array)
+    print("output: {ans}".format(ans=example_solution)) # Output: 3
+    
+    my_test_array = [6, 5, 4, 3, 2, 1] # All 6 have a view
+    print("input: {ex}".format(ex=my_test_array))
+    my_solution = n_sunset_view(my_test_array)
+    print("output: {ans}".format(ans=my_solution)) # Output: 3
