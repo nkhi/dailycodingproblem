@@ -18,84 +18,70 @@
 #                 return the number of nodes at that depth - 1
 
 # A binary tree node
-class BTNode:
-    def __init__(self, data):
-        self.data = data 
-        self.left = None
-        self.right = None
-    
-    def PrintTree(self):
-        print(self.data)
+class Node:
+    def __init__(self, val, l=None, r=None):
+        self.val = val
+        self.l = Node(l) if l else None
+        self.r = Node(r) if r else None
 
-listOfLists = []
+    def l_val(self):
+        return None if self.l is None else self.l.val
 
-def levelTraversal(root, level):
-    if root is None:
-        return
+    def r_val(self):
+        return None if self.r is None else self.r.val
 
-    if level >= len(listOfLists):
-        list = []
-        listOfLists.append(list)
-    listOfLists[level].append(root.data)
-    levelTraversal(root.left, level+1)
-    levelTraversal(root.right, level+1)
+    def parent_of(self, node: int):
+        return node in [self.l_val(), self.r_val()]
 
-def isSibling(root, a , b): 
-    if root is None: 
+    def __str__(self):
+        return str(self.val)
+
+
+def level(r: Node, value: int, lev=0) -> int:
+    if r is None:
         return 0
-  
-    return ((root.left == a and root.right ==b) or 
-            (root.left == b and root.right == a)or
-            isSibling(root.left, a, b) or
-            isSibling(root.right, a, b)) 
-  
-# Recursive function to find level of Node 'ptr' in  
-# a binary tree 
-def level(root, ptr, lev): 
-    if root is None : 
-        return 0 
-    if root == ptr:  
-        return lev 
-  
-    # Return level if Node is present in left subtree 
-    l = level(root.left, ptr, lev+1) 
-    if l != 0: 
-        return l 
-  
-    # Else search in right subtree 
-    return level(root.right, ptr, lev+1) 
-    
-# Returns 1 if a and b are cousins, otherwise 0 
-def isCousin(root,a, b): 
-      
-    # 1. The two nodes should be on the same level in  
-    # the binary tree 
-    # The two nodes should not be siblings(means that  
-    # they should not have the smae parent node 
-  
-    if ((level(root,a,1) == level(root, b, 1)) and 
-            not (isSibling(root, a, b))): 
-        return 1
-    else: 
-        return 0 
+    elif r.val == value:
+        return lev + 1
+    left_lev = level(r.l, value, lev + 1)
+    if left_lev > 0:
+        return left_lev
+    return level(r.r, value, lev + 1)
+
+def cousin_finder(r: Node, node: int, lev: int) -> list:
+    if r is None:
+        return []
+    elif lev == 2 and r.parent_of(node):
+        return []
+    elif lev == 1:
+        return [r.val]
+
+    res = []
+    res += cousin_finder(r.l, node, lev - 1)
+    res += cousin_finder(r.r, node, lev - 1)
+    return res
+
+def cousins(r: Node, node: int) -> list:
+    lev = level(r, node)
+    return cousin_finder(r, node, lev)
 
 if __name__ == "__main__":
-    root = BTNode(1) 
-    root.left = BTNode(2) 
-    root.right = BTNode(3) 
+    # establish given example as a tree with extra cousin 7
+    root = Node(1, 2, 3)
+    root.l.l = Node(4)
+    root.l.r = Node(5)
+    root.r.l = Node(6)
+    root.r.r = Node(7)
 
-    root.left.left = BTNode(4) 
-    root.left.right = BTNode(5) 
-    root.left.right.right = BTNode(15)
-    
-    root.right.left = BTNode(6) 
-    root.right.right = BTNode(7) 
-    root.right.left.right = BTNode(8) 
-    
-    # node1 = root.left.right 
-    # node2 = root.right.right  
-    
-    # print "Yes" if isCousin(root, node1, node2) == 1 else "No"
+    # verify level works
+    assert level(root, 1) == 1
+    assert level(root, 2) == 2
+    assert level(root, 3) == 2
+    assert level(root, 4) == 3
+    assert level(root, 5) == 3
+    assert level(root, 6) == 3
+    assert level(root, 7) == 3
+    assert level(root, 10) == 0
 
-    a = levelTraversal(root, 0)
-    print(a)
+    # calculate cousin
+    c = cousins(root, 5)
+    assert c == [6, 7], c
