@@ -2,8 +2,6 @@
 
 My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) challenges. 
 
-See the live repo: http://www.nikhi.ca/dailycodingproblem/
-
 |  | Problem # | Topic/Description | Difficulty | Time Taken | Link to file |
 |-|:-|:-|:-|:-|:-|
 | 1 | 285 | Array Search | Medium | 7 mins | [`problem285.py`](https://github.com/nkhi/dailycodingproblem/blob/master/problem285.py) |
