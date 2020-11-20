@@ -53,3 +53,7 @@ if __name__ == "__main__":
     lst = get_regular_numbers(3600)
     print(f"All regular numbers between 1 and 3600:")
     print(lst)
+
+# OUTPUT:
+# All regular numbers between 1 and 3600:
+# [30, 60, 90, 120, 150, 180, 240, 270, 300, 360, 450, 480, 540, 600, 720, 750, 810, 900, 960, 1080, 1200, 1350, 1440, 1500, 1620, 1800, 1920, 2160, 2250, 2400, 2430, 2700, 2880, 3000, 3240, 3600]
