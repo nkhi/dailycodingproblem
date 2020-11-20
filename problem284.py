@@ -86,4 +86,4 @@ if __name__ == "__main__":
 
     # calculate cousin
     c = cousins(root, 5)
-    assert c == [6, 7], c
+    print(f"Node with value 5 has cousins {c}")
