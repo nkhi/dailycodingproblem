@@ -32,34 +32,40 @@ def is_valid_utf(input: List[int]) -> bool:
     """
 
     n = len(input) / 8
-# 2 9
-# 3 17
-# 4 25
-    print(n)
+
+    # if the length isnt a multiple of 8, the
+    # string is malformed
     if n != int(n):
         return False
 
+    # n is an int
     n = int(n)
-    print(n)
 
+    # single byte case
     if n==1 and input[0] == 0:
         return True
 
+    # n-byte case
     else:
         first_n_bytes = input[0:n]
-        i = 1
         other_first_bytes = []
+
+        # step every 8 chats and get byte i's first char
+        i = 1
         while i != n:
             start = 8*i
-            stop = start + 1
-            other_first_bytes.append(input[start:stop])
+            stop = start + 2
+            other_first_bytes.append(1 if input[start:stop] == [1, 0] else 0)
             i+=1
+        
+        # if first n bytes are all 1 and other n-1 bytes start with 10s
         if all(first_n_bytes) and all(other_first_bytes):
             return True
 
+    # anything else
     return False
 
 if __name__ == "__main__":
     example = [1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0 ,1, 0, 1, 0, 1,1, 0, 0]
     ret = is_valid_utf(example)
-    print(ret)
+    print(f"{''.join([str(elem) for elem in example])} is {'a valid UTF-8 string' if ret else 'is malformed'}")
