@@ -27,3 +27,6 @@ def get_fixed_point(arr: List) -> int:
 if __name__ == "__main__":
     a = get_fixed_point([-6, 0, 2, 40])
     print(a)
+
+    b = get_fixed_point([1, 5, 7, 8])
+    print(b)
