@@ -42,7 +42,7 @@ def throw_dice(N, faces, total) -> int:
 if __name__ == "__main__":
 
     a = throw_dice(3, 6, 7)
-    print(a) # 54 ways to roll 7 with three 6-sided dice
+    print(a) # 15 ways to roll 7 with three 6-sided dice
 
     b = throw_dice(1, 6, 7)
     print(b) # 0 ways to roll 7 with one 6-sided dice
