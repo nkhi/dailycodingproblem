@@ -11,3 +11,4 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 | 5 | 277 | UTF-8 Encoding | Easy | 15 mins | [`problem277.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem277.py) |
 | 6 | 276 | Efficient String Search | Easy | 6 mins | [`problem276.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem276.py) |
 | 7 | 273 | Array Fixed Point | Easy | 2 mins | [`problem273.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem273.py) |
+| 8 | 272 | Combinations of Dice Rolls | Medium | 34 mins | [`problem272.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem272.py) |
