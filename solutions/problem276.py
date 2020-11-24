@@ -12,14 +12,25 @@
 # If not, return False.
 
 def search(pattern: str, target: str) -> bool:
+    """
+    Returns True if pattern occurs within target.
+    Otherwise returns False.
+    Assumptions: len(pattern) < len(target)
+    """
+    # N
     for i in range(len(target)):
+        # whatever i ends up being, worst case i = n
         while i < len(target):
-            if target[i:i+1] == pattern:
+            chunk = target[i:i+len(pattern)] # unnecessary, just to see iterations
+            print(chunk)
+            if chunk == pattern:
                 return True
             i += 1
     x = target[-2:] == pattern
+
+    # O(N * i) + 1 ?< O(N * k)
     return x or False
 
 if __name__ == "__main__":
-    a = search("hi", "nikhi")
+    a = search("ik", "nikhi") # i iterates twice, so 3 iterations < 5*2 iterations
     print(a) #True
