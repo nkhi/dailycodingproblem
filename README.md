@@ -5,7 +5,7 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 |  | Problem # | Topic/Description | Difficulty | Link to file |
 |-|:-|:-|:-|:-|
 | 1 | 285 | Array Search | Medium | [`problem285.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem285.py) |
-| 2 | 284 | Binary Tree Cousins | Medium | <a href="https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem284.py" target="_blank" title="Click to open in a new tab">`problem284.py`</a> |
+| 2 | 284 | Binary Tree Cousins | Medium | [`problem284.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem284.py) |
 | 3 | 283 | Regular Number Generator | Easy | [`problem283.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem283.py) |
 | 4 | 282 | Pythagorean Triples | Easy | [`problem282.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem282.py) |
 | 5 | 277 | UTF-8 Encoding | Easy | [`problem277.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem277.py) |
