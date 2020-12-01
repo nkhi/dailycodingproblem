@@ -13,3 +13,4 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 | 7 | 273 | Array Fixed Point | Easy | [`problem273.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem273.py) |
 | 8 | 272 | Combinations of Dice Rolls | Medium | [`problem272.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem272.py) |
 | 9 | 298 | Longest 2-e Array Slice | Medium | [`problem298.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem298.py) |
+| 10 | 263 | Sentence Validation | Medium | [`problem263.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem263.py) |
