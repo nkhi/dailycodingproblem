@@ -15,3 +15,4 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 | 9 | 298 | Longest 2-e Array Slice | Medium | [`problem298.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem298.py) |
 | 10 | 263 | Sentence Validation | Medium | [`problem263.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem263.py) |
 | 11 | 260 | Number Seq. Generation | Medium | [`problem260.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem260.py) |
+| 12 | 259 | Winning Ghost Starts | Hard | [`problem259.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem259.py) |
