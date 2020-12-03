@@ -3,7 +3,7 @@
 My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) challenges. 
 
 |  | Problem # | Topic/Description | Difficulty | Link to file |
-|-|:-|:-|:-|:-|:-|
+|-|:-|:-|:-|:-|
 | 1 | 285 | Array Search | Medium | [`problem285.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem285.py) |
 | 2 | 284 | Binary Tree Cousins | Medium | [`problem284.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem284.py) |
 | 3 | 283 | Regular Number Generator | Easy | [`problem283.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem283.py) |
