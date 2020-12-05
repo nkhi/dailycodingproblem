@@ -13,6 +13,8 @@ import random
 # I will implement Quicksort, the fastest heap algorithm I have memorized and then I will run various tests to see what the min number
 # of swaps required. I will also assume for simplicity that each person in the row can be denoted by an int, and that couples are n,n+1 respectively
 
+# Answer: The minimum number of swaps is between (min=2N, avg=2Nlog(2N), max=(2N)^2) inclusive, where N is the number of couples.
+
 # Quicksort
 
 def partition(arr, low, high):
