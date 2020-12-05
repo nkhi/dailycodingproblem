@@ -15,7 +15,7 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 | 9 | 298 | Longest 2-e Array Slice | Medium | [`problem298.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem298.py) |
 | 10 | 263 | Sentence Validation | Medium | [`problem263.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem263.py) |
 | 11 | 260 | Number Seq. Generation | Medium | [`problem260.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem260.py) |
-| 12 | 259 | Winning Ghost Starts | Hard | [`problem259.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem259.py) |
+| 12 | 259 | Winning Ghost Starts | :red_square: Hard | [`problem259.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem259.py) |
 | 13 | 300 | Vote Counting | Easy | [`problem300.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem300.py) |
 | 14 | 241 | Maximum h-index | Easy | [`problem241.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem241.py) |
 | 15 | 240 | QuickSorting Randomized Array | Hard | [`problem240.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem240.py) |
