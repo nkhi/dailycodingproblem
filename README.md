@@ -20,3 +20,5 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 | 14 | 241 | Maximum h-index | :green_square: Easy | [`problem241.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem241.py) |
 | 15 | 240 | QuickSorting Randomized Array | :red_square: Hard | [`problem240.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem240.py) |
 | 16 | 303 | Degree between clockhands | :green_square: Easy | [`problem303.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem303.py) |
+| 17 | 222 | Reduce pathnames | :orange_square: Medium | [`problem222.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem222.py) |
+
