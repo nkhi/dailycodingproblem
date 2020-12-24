@@ -19,14 +19,13 @@ from functools import reduce
 def factors(n):
     step = 2 if n%2 else 1
     f = [[i, n//i] for i in range(1, int(n**0.5) + 1, step) if n % i == 0]
-    f.pop(0)
+    f.pop(0) # removes the factor pair (1, n) which is always generated
     return f
 
 def num_steps(n: int) -> int:
     "Return the minimum number of steps from n to 1"
 
-    x, c = sorted(list(range(1, n+1)), reverse=True), 0
-    curr = x[0]
+    curr, c = n, 0
     while curr != 1:
         c += 1
         f = factors(curr)
@@ -35,9 +34,9 @@ def num_steps(n: int) -> int:
         mnm = 9000000
         for x in f:
             mnm = min(x[0], x[1], nxt)
-        print(f"curr {curr} c {c}")
+        # print(f"curr {curr} c {c}")
         curr = min(nxt, mnm)
-        print(f"next {curr}")
+        # print(f"next {curr}")
     return c
 
 if __name__ == "__main__":
