@@ -25,18 +25,24 @@ def factors(n):
 def num_steps(n: int) -> int:
     "Return the minimum number of steps from n to 1"
 
+    # curr is the current step value, starting at n
+    # c is the number of total steps taken
     curr, c = n, 0
+
     while curr != 1:
         c += 1
-        f = factors(curr)
-        next_move = curr - 1
+        f = factors(curr) # list of pairs of factors (a, b) of curr
+        next_move = curr - 1 # decrement by 1
         nxt = curr - 1
         mnm = 9000000
+        # cycle through the factor pairs and find the smallest value
         for x in f:
             mnm = min(x[0], x[1], nxt)
         # print(f"curr {curr} c {c}")
         curr = min(nxt, mnm)
         # print(f"next {curr}")
+    
+    # when the loop breaks, c is the number of steps to get to -1
     return c
 
 if __name__ == "__main__":
@@ -53,10 +59,10 @@ if __name__ == "__main__":
     ex3 = 319
     sol3 = num_steps(ex3)
     print(f"seed: {ex3} number of steps: {sol3}")
-    # seed: 12 number of steps: 4
+    # seed: 319 number of steps: 4
 
-    ex4 = 9812
+    ex4 = 11111111111111
     sol4 = num_steps(ex4)
     print(f"seed: {ex4} number of steps: {sol4}")
-    # seed: 12 number of steps: 4
+    # seed: 11111111111111 number of steps: 6
     
