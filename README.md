@@ -24,3 +24,4 @@ My solutions to the [Daily Coding Problem](https://www.dailycodingproblem.com/) 
 | 18 | 315 | Topeliz Matricies | :green_square: Easy | [`problem315.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem315.py) |
 | 19 | 321 | Steps from n to 1 | :green_square: Easy | [`problem321.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem321.py) |
 | 20 | 338 | Binary Ints w/ equal 1s | :orange_square: Medium | [`problem338.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem338.py) |
+| 21 | 347 | Lexicographical String Minimum | :orange_square: Medium | [`problem347.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem347.py) |
