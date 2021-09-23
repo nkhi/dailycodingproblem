@@ -11,6 +11,7 @@ Easy: :green_square: &nbsp; Medium: :orange_square: &nbsp; Hard: :red_square:
 | | Problem Desc.  | Solution Link |
 |-|:-|:-|
 | :orange_square: 1 | Interleave Stack w/ Queue  | [`problem573.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem573.py) |
+| :yellow_square: 2 | Implement SparseArray | [`problem588.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem588.py) |
 
 <br>
 
