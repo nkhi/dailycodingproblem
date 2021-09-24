@@ -11,8 +11,8 @@ Easy: :green_square: &nbsp; Medium: :orange_square: &nbsp; Hard: :red_square:
 | | Problem Desc.  | Solution Link |
 |-|:-|:-|
 | :orange_square: 1 | Interleave Stack w/ Queue  | [`problem573.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem573.py) |
-| :yellow_square: 2 | Implement SparseArray | [`problem588.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem588.py) |
-| :yellow_square: 3 | Lexographic Maximums | [`problem572.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem572.py) |
+| :green_square: 2 | Implement SparseArray | [`problem588.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem588.py) |
+| :red_square: 3 | Lexographic Maximums | [`problem572.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem572.py) |
 | :red_square: 4 | XOR Linked List | [`problem590.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem590.py) |
 <br>
 
