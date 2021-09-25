@@ -14,6 +14,7 @@ Easy: :green_square: &nbsp; Medium: :orange_square: &nbsp; Hard: :red_square:
 | :green_square: 2 | Implement SparseArray | [`problem588.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem588.py) |
 | :red_square: 3 | Lexographic Maximums | [`problem572.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem572.py) |
 | :red_square: 4 | XOR Linked List | [`problem590.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem590.py) |
+| :red_square: 5 | Expected Value Sim | [`problem590.py`](https://github.com/nkhi/dailycodingproblem/blob/master/solutions/problem589.py) |
 <br>
 
 ##### **Jan - Feb 2021**
