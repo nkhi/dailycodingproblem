@@ -16,25 +16,45 @@
 
 # always good to have some tree practice
 
-class TreeNode(data, left=None, right=None):
+# Tree Node def'n
+class Node:
+	def __init__(self, data):
+		self.data = data
+		self.left = None
+		self.right = None
 
-    def __init__(self, data, left, right):
-        "Make a new TreeNode"
+# Helpers
+def printPaths(root):
+    "Start recursively printing paths"
+    
+    path = []
+    printPathsRec(root, path, 0)
 
-        self.data = data
-        self.left = left
-        self.right = right
+def printPathsRec(root, path, pathLen):
 
-    def setLeft(self, left: TreeNode):
-        self.left = left
+    # stopping cond for leaves
+	if root is None:
+		return
 
-    def setRight(self, right: TreeNode):
-        self.left = right
+    # keep track of pathlen
+	if(len(path) > pathLen):
+		path[pathLen] = root.data
+	else:
+		path.append(root.data)
+	pathLen = pathLen + 1
 
-    def walk(self):
-        "Walk down the rest of the tree from self"
+    # print final path if you're at a leaf
+    # otherwise print the paths of the children
+	if root.left is None and root.right is None:
+		print(f"PATH: {path[0:pathLen]}")
+	else:
+		printPathsRec(root.left, path, pathLen)
+		printPathsRec(root.right, path, pathLen)
 
-        print(self.data)
-        walk(self.left) if self.left is not None else \
-        walk(self.right) if self.right is not None else \
-        print("\n")
+root = Node(10)
+root.left = Node(8)
+root.right = Node(2)
+root.left.left = Node(3)
+root.left.right = Node(5)
+root.right.left = Node(2)
+printPaths(root)

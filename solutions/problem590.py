@@ -69,8 +69,10 @@ if __name__ == "__main__":
 
     # head <-> 1<-> 2 <-> 3 <-> 4 <-> 5
     xor = XorLinkedList()
+    xor.insert(0)
     xor.insert(1)
     xor.insert(2)
     xor.insert(3)
     xor.insert(4)
     xor.insert(5)
+    xor.printList() # 5 4 3 2 1 2 3 4 5
